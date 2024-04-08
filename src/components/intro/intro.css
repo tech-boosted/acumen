@@ -1,0 +1,22 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 0 100px;
+  color: #fff;
+  gap: 25px;
+}
+
+.intro-text {
+  font-size: 4vw;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.intro-logo {
+  width: 250px;
+  height: auto;
+}

@@ -1,0 +1,12 @@
+:root {
+  --extra-bold: "Monument-Ultrabold";
+}
+
+.app-text-extra-bold {
+  font-family: var(--extra-bold);
+}
+
+.App {
+  background-color: #8c52ff;
+  height: 100vh;
+}
