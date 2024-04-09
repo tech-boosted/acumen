@@ -1,7 +1,6 @@
-import React, { MutableRefObject, useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Company, Header, Intro, WhatWeDo } from "./components";
 import LocomotiveScroll from "locomotive-scroll";
-// import "locomotive-scroll/src/locomotive-scroll.scss";
 import "./App.css";
 
 export const App = () => {
@@ -37,9 +36,11 @@ export const App = () => {
 
   useEffect(() => {
     if (containerEl) {
-      const scroll = new LocomotiveScroll({
+      new LocomotiveScroll({
         el: containerEl,
         smooth: true,
+        multiplier: 1,
+        class: "is-reveal",
       });
     }
   }, [containerEl]);
