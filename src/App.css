@@ -1,12 +1,40 @@
 :root {
+  --dmsans-regular: "DMSans-Regular";
+  --dmsans-bold: "DMSans-Bold";
+  --dmsans-semibold: "DMSans-SemiBold";
   --extra-bold: "Monument-Ultrabold";
+  --regular: "Monument-Regular";
+
+  --primary-theme-color: #8c52ff;
 }
 
 .app-text-extra-bold {
   font-family: var(--extra-bold);
 }
 
+.app-text-regular {
+  font-family: var(--regular);
+}
+
+.app-text-dm-regular {
+  font-family: var(--dmsans-regular);
+}
+
+.app-text-dm-semibold {
+  font-family: var(--dmsans-semibold);
+}
+
+.app-text-dm-bold {
+  font-family: var(--dmsans-bold);
+}
+
 .App {
-  background-color: #8c52ff;
-  height: 100vh;
+  background-color: var(--primary-theme-color);
+  min-height: 100vh;
+
+  transition: background 0.7s;
+}
+
+.App-white {
+  background-color: #e5e5e5;
 }

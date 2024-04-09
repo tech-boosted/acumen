@@ -1,0 +1,39 @@
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 0 100px;
+  color: #fff;
+  gap: 25px;
+}
+
+.company-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.company-img {
+  width: 350px;
+  height: auto;
+}
+
+.company-text-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.company-heading {
+  font-size: 2vw;
+}
+
+.company-text {
+  font-size: 1.5vw;
+}

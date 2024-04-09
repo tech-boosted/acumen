@@ -10,6 +10,10 @@
   color: #fff;
 }
 
+.header-white-bg {
+  color: var(--primary-theme-color);
+}
+
 .header-nav {
   display: flex;
   margin-left: auto;
