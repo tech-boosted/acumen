@@ -7,6 +7,12 @@
   padding: 0 100px;
   color: #fff;
   gap: 25px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.company-visible {
+  opacity: 1;
 }
 
 .company-img-container {

@@ -13,6 +13,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
     <div
       className={`what-we-do ${isVisible ? "what-we-do-visible" : ""}`}
       id={sectionId}
+      data-scroll-section
     >
       <div className="what-we-do-img-container">
         <img src={Images.Img25} className="what-we-do-img" />

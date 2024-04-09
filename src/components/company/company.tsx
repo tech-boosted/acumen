@@ -2,11 +2,16 @@ import React from "react";
 import "./company.css";
 import { Images } from "../../assets/images";
 
-interface CompanyProps {}
+interface CompanyProps {
+  isVisible: boolean;
+}
 
-export const Company: React.FC<CompanyProps> = ({}) => {
+export const Company: React.FC<CompanyProps> = ({ isVisible }) => {
   return (
-    <div className="company">
+    <div
+      className={`company ${isVisible ? "company-visible" : ""}`}
+      data-scroll-section
+    >
       <div className="company-img-container">
         <img src={Images.Img21} className="company-img" />
       </div>
