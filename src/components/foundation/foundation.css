@@ -1,0 +1,44 @@
+.foundation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  min-height: 100vh;
+  padding: 0 100px;
+  color: #ffffff;
+  gap: 25px;
+  transition: all;
+
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.foundation-img {
+  position: absolute;
+  width: 600px;
+  height: auto;
+}
+
+.foundation-text-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 70px;
+
+  width: 100%;
+}
+
+.foundation-text {
+  font-size: 1.8vw;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.foundation-text-1 {
+  text-align: left;
+}
+
+.foundation-text-3 {
+  text-align: right;
+}

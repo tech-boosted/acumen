@@ -31,6 +31,7 @@
 .App {
   background-color: var(--primary-theme-color);
   min-height: 100vh;
+  overflow-x: hidden;
 
   transition: background 0.7s;
 }

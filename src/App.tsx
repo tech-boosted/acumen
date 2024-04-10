@@ -1,12 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { Company, Header, Intro, WhatWeDo } from "./components";
+import { Company, Foundation, Header, Intro, WhatWeDo } from "./components";
 import LocomotiveScroll from "locomotive-scroll";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import "./App.css";
+import { ScrollTrigger } from "gsap/all";
 
 export const App = () => {
   const containerEl = document.getElementById("#app")!;
+  const container2El = document.getElementById("#introContainer")!;
 
   const [isVisible, setIsVisible] = useState(false);
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    let sections = gsap.utils.toArray(".horizontal-section");
+    console.log("sections: ", sections);
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".intro-horizontal",
+        // start: "0",
+        // end: "120%",
+        pin: true,
+        scrub: 1,
+        // markers: true,
+      },
+    });
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,11 +61,9 @@ export const App = () => {
       new LocomotiveScroll({
         el: containerEl,
         smooth: true,
-        multiplier: 1,
-        class: "is-reveal",
       });
     }
-  }, [containerEl]);
+  }, [containerEl, container2El]);
 
   return (
     <div
@@ -52,7 +72,15 @@ export const App = () => {
       data-scroll-container
     >
       <Header isBgWhite={isVisible} />
-      <Intro />
+      <div
+        style={{ display: "flex" }}
+        className="intro-horizontal"
+        // data-scroll-section
+        // data-scroll-direction="horizontal"
+      >
+        <Intro />
+        <Foundation />
+      </div>
       <WhatWeDo sectionId={"id-what-we-do"} isVisible={isVisible} />
       <Company isVisible={!isVisible} />
     </div>

@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./what-we-do.css";
 import { Images } from "../../assets/images";
-import { useOnScreen } from "../../hooks";
 
 interface WhatWeDoProps {
   sectionId: string;
@@ -16,7 +15,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
       data-scroll-section
     >
       <div className="what-we-do-img-container">
-        <img src={Images.Img25} className="what-we-do-img" />
+        <img src={Images.Img25NoBg} className="what-we-do-img" />
       </div>
       <div className="what-we-do-text-container">
         <span className="what-we-do-heading app-text-regular">What we do</span>

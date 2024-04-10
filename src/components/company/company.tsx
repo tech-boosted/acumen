@@ -13,7 +13,7 @@ export const Company: React.FC<CompanyProps> = ({ isVisible }) => {
       data-scroll-section
     >
       <div className="company-img-container">
-        <img src={Images.Img21} className="company-img" />
+        <img src={Images.Img21NoBg} className="company-img" />
       </div>
       <div className="company-text-container">
         <span className="company-heading app-text-regular">Our Purpose</span>
