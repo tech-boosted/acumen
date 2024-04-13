@@ -1,0 +1,99 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-theme-color);
+
+  padding: 20px 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu-active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2000;
+}
+
+.close-box {
+  display: flex;
+  position: absolute;
+  color: #fff;
+  top: 55px;
+  right: 100px;
+  font-size: 50px;
+  cursor: pointer;
+  height: auto;
+}
+
+.close {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-arc-1,
+.close-arc-2 {
+  height: 2px;
+  width: 35px;
+  background-color: #fff;
+}
+
+.close-arc-1 {
+  rotate: 45deg;
+}
+.close-arc-2 {
+  position: absolute;
+  rotate: 135deg;
+}
+
+.menu-text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.menu-nav-text {
+  color: #fff;
+  font-size: 2vw;
+  letter-spacing: 1px;
+  opacity: 0;
+}
+
+.menu-nav-text-animate {
+  -webkit-animation: menu-links-effect;
+  animation: menu-links-effect;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.option-1 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.option-2 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.option-3 {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.option-4 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}

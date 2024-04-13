@@ -5,6 +5,7 @@ import {
   Foundation,
   Header,
   Intro,
+  Menu,
   WhatWeDo,
 } from "./components";
 import LocomotiveScroll from "locomotive-scroll";
@@ -16,6 +17,7 @@ import { ScrollTrigger } from "gsap/all";
 export const App = () => {
   const containerEl = document.getElementById("#app")!;
 
+  const [menuActive, setMenuActive] = useState(false);
   const [whatWeDoVisible, setWhatWeDoVisible] = useState(false);
   const [companyVisible, setCompanyVisible] = useState(false);
   const [foundationVisible, setFoundationVisible] = useState(false);
@@ -70,6 +72,8 @@ export const App = () => {
           !(sectionRect.bottom <= windowHeight / 2)
         ) {
           setCompanyVisible(true);
+        } else {
+          setCompanyVisible(false);
         }
       }
 
@@ -83,6 +87,8 @@ export const App = () => {
           !(sectionRect.right <= windowWidth / 2)
         ) {
           setFoundationVisible(true);
+        } else {
+          setFoundationVisible(false);
         }
       }
     };
@@ -108,7 +114,14 @@ export const App = () => {
       id="app"
       data-scroll-container
     >
-      <Header isBgWhite={whatWeDoVisible} />
+      <Menu
+        menuActive={menuActive}
+        onClose={() => setMenuActive(!menuActive)}
+      />
+      <Header
+        isBgWhite={whatWeDoVisible}
+        onClickToggle={() => setMenuActive(!menuActive)}
+      />
       <div style={{ display: "flex" }} className="intro-horizontal">
         <Intro />
         <Foundation sectionId={"id-foundation"} isVisible={foundationVisible} />

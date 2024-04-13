@@ -14,45 +14,96 @@ export const Company: React.FC<CompanyProps> = ({ isVisible, sectionId }) => {
       id={sectionId}
       data-scroll-section
     >
-      <div className="company-img-container">
-        <img
-          src={Images.Img21NoBg}
-          className={`company-img ${isVisible ? "appearing_text" : ""}`}
-        />
+      <div className="company-section-1">
+        <div className="company-text-container">
+          <span
+            className={`company-heading app-text-regular ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            About Us
+          </span>
+          {/* <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Acumen
+            <br /> \AK-yoo-mun\ Greek.
+            <br /> Noun. : Something at an extreme height or depth. Peak of
+            perception, or discernment, especially in practical matters.
+            <br />
+            Similar: awareness, insight, heightened, wisdom, vision.
+          </span> */}
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Acumen is a rapidly growing consumer e-commerce company that is
+            transforming the way consumer brands are built & scaled.
+          </span>
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Purpose: Acumen's purpose is to empower breakthrough products, distinguished
+            brands, and consumers' individuality; through constant innovation,
+            transformative characteristics, and deep learning. "We build and
+            grow global brands that are loved by customers, driven by
+            communities, and are purposed to change the world."
+          </span>
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Data Driven: Building brands powered by highly sophisticated Market
+            research and Consumer behaviour reports.
+          </span>
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Controlled Execution: Being part of the brand right from the
+            inception with well-executed product research, supply chain, design,
+            branding, marketing, and distribution.
+          </span>
+        </div>
+        <div className="company-img-container">
+          <img
+            src={Images.Img21NoBg}
+            className={`company-img ${isVisible ? "appearing_text" : ""}`}
+          />
+        </div>
       </div>
-      <div className="company-text-container">
+      <div className="company-section-2">
         <span
-          className={`company-heading app-text-regular ${
+          className={`company-text app-text-dm-regular  ${
             isVisible ? "appearing_text" : ""
           }`}
         >
-          Our Purpose
+          End-to-End Alignment: Acumen recognizes that global brand success
+          hinges on meticulous orchestration. Just local and international
+          expansion efforts fall short without a unified approach to backward
+          integration (manufacturing & supply chain) and forward momentum
+          (market penetration & global partnerships). We prioritize stakeholder
+          alignment from the outset, ensuring all components function as a
+          cohesive whole.
         </span>
         <span
           className={`company-text app-text-dm-regular  ${
             isVisible ? "appearing_text" : ""
           }`}
         >
-          We build and grow global brands that are loved by customers, driven by
-          communities, and are purposed to change the world.
-        </span>
-        <span
-          className={`company-text app-text-dm-regular  ${
-            isVisible ? "appearing_text" : ""
-          }`}
-        >
-          We envision a future where Acumen transcends traditional definitions
-          of commerce and become a catalyst in enabling the exploration of
-          consumers' individuality and brands' purpose to impact the world.
-        </span>
-        <span
-          className={`company-text app-text-dm-regular  ${
-            isVisible ? "appearing_text" : ""
-          }`}
-        >
-          Our mission is to revolutionize the way brands are created and
-          perceived. "We give birth to brands that embody personality,
-          individuality, and purpose.
+          This holistic approach grants Acumen a distinct advantage – the
+          ability to turbocharge operations and drive efficient,
+          results-oriented expansion in all directions. By proactively
+          addressing manufacturing and supply chain considerations during the
+          initial brand-building phase, we equip our clients for aggressive and
+          efficient global domination.​
         </span>
       </div>
     </div>

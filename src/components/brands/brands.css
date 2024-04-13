@@ -42,7 +42,7 @@
 .brand-img {
   width: 100%;
   cursor: pointer;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 .overlay-box {

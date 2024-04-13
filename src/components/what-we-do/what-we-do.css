@@ -6,7 +6,7 @@
   min-height: 100vh;
   padding: 0 100px;
   color: var(--primary-theme-color);
-  gap: 25px;
+  gap: 20px;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -23,7 +23,7 @@
 }
 
 .what-we-do-img {
-  width: 450px;
+  width: 650px;
   height: auto;
 }
 
@@ -32,7 +32,6 @@
   flex-direction: column;
 
   gap: 40px;
-  text-align: center;
   flex: 1;
 }
 
