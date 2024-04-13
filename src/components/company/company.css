@@ -8,11 +8,6 @@
   color: #fff;
   gap: 25px;
   opacity: 0;
-  transition: all 0.5s;
-}
-
-.company-visible {
-  opacity: 1;
 }
 
 .company-img-container {
@@ -25,6 +20,7 @@
 .company-img {
   width: 450px;
   height: auto;
+  opacity: 0;
 }
 
 .company-text-container {
@@ -38,8 +34,10 @@
 
 .company-heading {
   font-size: 2vw;
+  opacity: 0;
 }
 
 .company-text {
   font-size: 1.5vw;
+  opacity: 0;
 }

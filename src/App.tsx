@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Company, Foundation, Header, Intro, WhatWeDo } from "./components";
+import {
+  Brands,
+  Company,
+  Foundation,
+  Header,
+  Intro,
+  WhatWeDo,
+} from "./components";
 import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -8,9 +15,10 @@ import { ScrollTrigger } from "gsap/all";
 
 export const App = () => {
   const containerEl = document.getElementById("#app")!;
-  const container2El = document.getElementById("#introContainer")!;
 
-  const [isVisible, setIsVisible] = useState(false);
+  const [whatWeDoVisible, setWhatWeDoVisible] = useState(false);
+  const [companyVisible, setCompanyVisible] = useState(false);
+  const [foundationVisible, setFoundationVisible] = useState(false);
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -32,9 +40,12 @@ export const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const section = document.getElementById("id-what-we-do");
-      if (section) {
-        const sectionRect = section.getBoundingClientRect();
+      const whatWeDoSection = document.getElementById("id-what-we-do");
+      const companySection = document.getElementById("id-company");
+      const foundationSection = document.getElementById("id-foundation");
+
+      if (whatWeDoSection) {
+        const sectionRect = whatWeDoSection.getBoundingClientRect();
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
         // Check if section is at least 50% visible
@@ -43,9 +54,35 @@ export const App = () => {
           sectionRect.top <= windowHeight / 2 &&
           !(sectionRect.bottom <= windowHeight / 2)
         ) {
-          setIsVisible(true);
+          setWhatWeDoVisible(true);
         } else {
-          setIsVisible(false);
+          setWhatWeDoVisible(false);
+        }
+      }
+
+      if (companySection) {
+        const sectionRect = companySection.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+        if (
+          sectionRect.bottom >= 0 &&
+          sectionRect.top <= windowHeight / 2 &&
+          !(sectionRect.bottom <= windowHeight / 2)
+        ) {
+          setCompanyVisible(true);
+        }
+      }
+
+      if (foundationSection) {
+        const sectionRect = foundationSection.getBoundingClientRect();
+        const windowWidth =
+          window.innerWidth || document.documentElement.clientWidth;
+        if (
+          sectionRect.right >= 0 &&
+          sectionRect.left <= windowWidth / 2 &&
+          !(sectionRect.right <= windowWidth / 2)
+        ) {
+          setFoundationVisible(true);
         }
       }
     };
@@ -63,26 +100,22 @@ export const App = () => {
         smooth: true,
       });
     }
-  }, [containerEl, container2El]);
+  }, [containerEl]);
 
   return (
     <div
-      className={`App ${isVisible ? "App-white" : ""}`}
+      className={`App ${whatWeDoVisible ? "App-white" : ""}`}
       id="app"
       data-scroll-container
     >
-      <Header isBgWhite={isVisible} />
-      <div
-        style={{ display: "flex" }}
-        className="intro-horizontal"
-        // data-scroll-section
-        // data-scroll-direction="horizontal"
-      >
+      <Header isBgWhite={whatWeDoVisible} />
+      <div style={{ display: "flex" }} className="intro-horizontal">
         <Intro />
-        <Foundation />
+        <Foundation sectionId={"id-foundation"} isVisible={foundationVisible} />
       </div>
-      <WhatWeDo sectionId={"id-what-we-do"} isVisible={isVisible} />
-      <Company isVisible={!isVisible} />
+      <Brands />
+      <WhatWeDo sectionId={"id-what-we-do"} isVisible={whatWeDoVisible} />
+      <Company sectionId={"id-company"} isVisible={companyVisible} />
     </div>
   );
 };

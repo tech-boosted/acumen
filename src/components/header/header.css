@@ -23,11 +23,20 @@
 }
 
 .header-nav-text {
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   letter-spacing: 1px;
+
+  -webkit-animation: appearing_text;
+  animation: appearing_text;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  /* -webkit-animation-delay: 1s;
+  animation-delay: 1s; */
 }
 
 .header-logo {
-  width: 115px;
+  width: 100px;
   height: auto;
 }

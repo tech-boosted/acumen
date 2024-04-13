@@ -7,6 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* html.has-scroll-smooth {
   overflow: hidden;
 }

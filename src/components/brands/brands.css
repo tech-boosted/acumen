@@ -1,0 +1,73 @@
+.brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 0 100px;
+  color: #fff;
+  gap: 90px;
+  transition: all 0.5s;
+}
+
+.brands-heading {
+  font-size: 2vw;
+}
+
+.brands-list {
+  display: flex;
+}
+
+.brand-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  gap: 20px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.brand-box-text {
+  font-size: 2vw;
+}
+
+.brand-box-img-container {
+  display: flex;
+  position: relative;
+}
+
+.brand-img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.overlay-box {
+  background: rgba(140, 82, 255, 0.2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  -webkit-transition: 0.25s ease-in-out opacity;
+  -moz-transition: 0.25s ease-in-out opacity;
+  -o-transition: 0.25s ease-in-out opacity;
+  transition: 0.25s ease-in-out opacity;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.overlay-box:hover {
+  opacity: 1;
+}
+
+.overlay-img {
+  width: 6vw;
+}
