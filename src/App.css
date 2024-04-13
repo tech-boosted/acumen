@@ -63,22 +63,15 @@
   animation-delay: 0.5s;
 }
 
-@-webkit-keyframes appearing_text {
-  0% {
-    -webkit-clip-path: inset(95% 0 0 0);
-    clip-path: inset(95% 0 0 0);
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60px, 0);
-    transform: translate3d(0, 60px, 0);
-  }
-
-  to {
-    -webkit-clip-path: inset(0 0 0 0);
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
+.appearing_text_reverse {
+  -webkit-animation: appearing_text_reverse;
+  animation: appearing_text_reverse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 @keyframes appearing_text {
@@ -99,12 +92,16 @@
   }
 }
 
-@-webkit-keyframes appears {
+@keyframes appearing_text_reverse {
   0% {
+    -webkit-clip-path: inset(-95% 0 0 0);
+    clip-path: inset(-95% 0 0 0);
     opacity: 0;
   }
 
   to {
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
     opacity: 1;
   }
 }

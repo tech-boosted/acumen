@@ -2,10 +2,21 @@ import React from "react";
 import "./brands.css";
 import { Images } from "../../assets";
 
-export const Brands: React.FC<any> = () => {
+interface BrandsProps {
+  sectionId: string;
+  isVisible: boolean;
+}
+
+export const Brands: React.FC<BrandsProps> = ({ sectionId, isVisible }) => {
   return (
-    <div className="brands">
-      <span className="brands-heading app-text-regular">OUR BRANDS</span>
+    <div className={`brands`} id={sectionId}>
+      <span
+        className={`brands-heading app-text-regular ${
+          isVisible ? "appearing_text" : ""
+        }`}
+      >
+        OUR BRANDS
+      </span>
       <div className="brands-list">
         <div className="brand-box">
           <div
@@ -15,9 +26,18 @@ export const Brands: React.FC<any> = () => {
             <div className="overlay-box">
               <img src={Images.AmmoLogo} className="overlay-img" />
             </div>
-            <img src={Images.Ammo} className="brand-img" />
+            <img
+              src={Images.Ammo}
+              className={`brand-img ${isVisible ? "appearing_text" : ""}`}
+            />
           </div>
-          <span className="brand-box-text app-text-extra-bold">Ammo Grips</span>
+          <span
+            className={`brand-box-text app-text-extra-bold ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Ammo Grips
+          </span>
         </div>
       </div>
     </div>

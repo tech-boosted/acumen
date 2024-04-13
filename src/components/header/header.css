@@ -15,6 +15,8 @@
 .header-logo {
   width: 100px;
   height: auto;
+
+  opacity: 0;
 }
 
 .header-white-bg {
@@ -58,6 +60,8 @@
   -ms-flex-align: end;
   align-items: flex-end;
   cursor: pointer;
+
+  opacity: 0;
 }
 
 .menu-toggle span {

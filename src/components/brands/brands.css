@@ -12,6 +12,7 @@
 
 .brands-heading {
   font-size: 2vw;
+  opacity: 0;
 }
 
 .brands-list {
@@ -32,6 +33,7 @@
 
 .brand-box-text {
   font-size: 2vw;
+  opacity: 0;
 }
 
 .brand-box-img-container {
@@ -43,6 +45,7 @@
   width: 100%;
   cursor: pointer;
   /* border-radius: 15px; */
+  opacity: 0;
 }
 
 .overlay-box {

@@ -21,6 +21,7 @@ export const App = () => {
   const [whatWeDoVisible, setWhatWeDoVisible] = useState(false);
   const [companyVisible, setCompanyVisible] = useState(false);
   const [foundationVisible, setFoundationVisible] = useState(false);
+  const [brandsVisible, setBrandsVisible] = useState(false);
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -44,7 +45,8 @@ export const App = () => {
     const handleScroll = () => {
       const whatWeDoSection = document.getElementById("id-what-we-do");
       const companySection = document.getElementById("id-company");
-      const foundationSection = document.getElementById("id-foundation");
+      const Intro2 = document.getElementById("id-foundation");
+      const brandsSection = document.getElementById("id-brands");
 
       if (whatWeDoSection) {
         const sectionRect = whatWeDoSection.getBoundingClientRect();
@@ -68,17 +70,15 @@ export const App = () => {
           window.innerHeight || document.documentElement.clientHeight;
         if (
           sectionRect.bottom >= 0 &&
-          sectionRect.top <= windowHeight / 2 &&
-          !(sectionRect.bottom <= windowHeight / 2)
+          sectionRect.top <= windowHeight / 3 &&
+          !(sectionRect.bottom <= windowHeight / 3)
         ) {
           setCompanyVisible(true);
-        } else {
-          setCompanyVisible(false);
         }
       }
 
-      if (foundationSection) {
-        const sectionRect = foundationSection.getBoundingClientRect();
+      if (Intro2) {
+        const sectionRect = Intro2.getBoundingClientRect();
         const windowWidth =
           window.innerWidth || document.documentElement.clientWidth;
         if (
@@ -89,6 +89,19 @@ export const App = () => {
           setFoundationVisible(true);
         } else {
           setFoundationVisible(false);
+        }
+      }
+
+      if (brandsSection) {
+        const sectionRect = brandsSection.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+        if (
+          sectionRect.bottom >= 0 &&
+          sectionRect.top <= windowHeight / 3 &&
+          !(sectionRect.bottom <= windowHeight / 3)
+        ) {
+          setBrandsVisible(true);
         }
       }
     };
@@ -126,9 +139,9 @@ export const App = () => {
         <Intro />
         <Foundation sectionId={"id-foundation"} isVisible={foundationVisible} />
       </div>
-      <Brands />
       <WhatWeDo sectionId={"id-what-we-do"} isVisible={whatWeDoVisible} />
       <Company sectionId={"id-company"} isVisible={companyVisible} />
+      <Brands sectionId={"id-brands"} isVisible={brandsVisible} />
     </div>
   );
 };

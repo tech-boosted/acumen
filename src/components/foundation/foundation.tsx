@@ -42,7 +42,7 @@ export const Foundation: React.FC<FoundationProps> = ({
       </div>
       <img
         src={Images.Img20NoBg}
-        className={`foundation-img ${isVisible ? "appears" : ""}`}
+        className={`foundation-img ${isVisible ? "appearing_text" : ""}`}
       />
     </div>
   );
