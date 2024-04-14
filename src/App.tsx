@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Brands,
   Company,
@@ -11,11 +11,34 @@ import {
 import "./App.css";
 
 export const App = () => {
+  const aboutUsRef = useRef<HTMLElement>(null);
+  const brandsRef = useRef<HTMLElement>(null);
+  const contactRef = useRef<HTMLElement>(null);
+
   const [menuActive, setMenuActive] = useState(false);
   const [whatWeDoVisible, setWhatWeDoVisible] = useState(false);
   const [companyVisible, setCompanyVisible] = useState(false);
   const [brandsVisible, setBrandsVisible] = useState(false);
   const [loaderVisible, setLoaderVisible] = useState(true);
+
+  const scrollToSection = (sectionName: "about" | "brands" | "contact") => {
+    if (sectionName === "about") {
+      setTimeout(() => {
+        aboutUsRef?.current?.scrollIntoView();
+      }, 100);
+      setTimeout(() => {
+        setMenuActive(false);
+      }, 500);
+    }
+    if (sectionName === "brands") {
+      setTimeout(() => {
+        brandsRef?.current?.scrollIntoView();
+      }, 100);
+      setTimeout(() => {
+        setMenuActive(false);
+      }, 500);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,12 +65,6 @@ export const App = () => {
         const sectionRect = companySection.getBoundingClientRect();
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
-
-        console.log(
-          "sectionRect.top, windowHeight: ",
-          sectionRect.top,
-          windowHeight
-        );
         if (sectionRect.top <= windowHeight - 600 && sectionRect.bottom >= 0) {
           setCompanyVisible(true);
         } else {
@@ -61,8 +78,6 @@ export const App = () => {
           window.innerHeight || document.documentElement.clientHeight;
         if (sectionRect.top <= windowHeight / 2 && sectionRect.bottom >= 0) {
           setBrandsVisible(true);
-        } else {
-          setBrandsVisible(false);
         }
       }
     };
@@ -84,6 +99,7 @@ export const App = () => {
       <Loader isVisible={loaderVisible} />
       <Menu
         menuActive={menuActive}
+        onNavigate={scrollToSection}
         onClose={() => setMenuActive(!menuActive)}
       />
       <Header
@@ -96,8 +112,16 @@ export const App = () => {
       </div> */}
       <Intro />
       <WhatWeDo sectionId={"id-what-we-do"} isVisible={whatWeDoVisible} />
-      <Company sectionId={"id-company"} isVisible={companyVisible} />
-      <Brands sectionId={"id-brands"} isVisible={brandsVisible} />
+      <Company
+        sectionId={"id-company"}
+        isVisible={companyVisible}
+        companyRef={aboutUsRef}
+      />
+      <Brands
+        sectionId={"id-brands"}
+        isVisible={brandsVisible}
+        brandsRef={brandsRef}
+      />
     </div>
   );
 };

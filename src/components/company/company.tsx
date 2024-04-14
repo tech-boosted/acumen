@@ -5,11 +5,20 @@ import { Images } from "../../assets/images";
 interface CompanyProps {
   isVisible: boolean;
   sectionId: string;
+  companyRef: any;
 }
 
-export const Company: React.FC<CompanyProps> = ({ isVisible, sectionId }) => {
+export const Company: React.FC<CompanyProps> = ({
+  isVisible,
+  sectionId,
+  companyRef,
+}) => {
   return (
-    <div className={`company ${isVisible ? "appears" : ""}`} id={sectionId}>
+    <div
+      className={`company ${isVisible ? "appears" : ""}`}
+      id={sectionId}
+      ref={companyRef}
+    >
       <div className="company-section-1">
         <div className="company-text-container">
           <span

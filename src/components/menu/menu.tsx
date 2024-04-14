@@ -3,10 +3,15 @@ import "./menu.css";
 
 interface MenuProps {
   menuActive: boolean;
+  onNavigate: (sectionName: "about" | "contact" | "brands") => any;
   onClose: () => any;
 }
 
-export const Menu: React.FC<MenuProps> = ({ menuActive, onClose }) => {
+export const Menu: React.FC<MenuProps> = ({
+  menuActive,
+  onNavigate,
+  onClose,
+}) => {
   return (
     <div className={`menu ${menuActive ? "menu-active" : ""} `}>
       <div className="close-box" onClick={onClose}>
@@ -20,6 +25,7 @@ export const Menu: React.FC<MenuProps> = ({ menuActive, onClose }) => {
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-1" : ""
           } `}
+          onClick={() => onNavigate("about")}
         >
           About us
         </span>
@@ -27,6 +33,7 @@ export const Menu: React.FC<MenuProps> = ({ menuActive, onClose }) => {
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-2" : ""
           } `}
+          onClick={() => onNavigate("brands")}
         >
           Brands
         </span>
@@ -34,13 +41,14 @@ export const Menu: React.FC<MenuProps> = ({ menuActive, onClose }) => {
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-3" : ""
           } `}
-        >
+          >
           Careers
         </span> */}
         <span
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-3" : ""
           } `}
+          onClick={() => onNavigate("contact")}
         >
           Contact
         </span>

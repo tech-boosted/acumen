@@ -10,6 +10,7 @@
   color: #fff;
   gap: 45px;
   opacity: 0;
+  transition: all 1s;
 }
 
 .company-img-container {

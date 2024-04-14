@@ -5,11 +5,16 @@ import { Images } from "../../assets";
 interface BrandsProps {
   sectionId: string;
   isVisible: boolean;
+  brandsRef: any;
 }
 
-export const Brands: React.FC<BrandsProps> = ({ sectionId, isVisible }) => {
+export const Brands: React.FC<BrandsProps> = ({
+  sectionId,
+  isVisible,
+  brandsRef,
+}) => {
   return (
-    <div className={`brands`} id={sectionId}>
+    <div className={`brands`} id={sectionId} ref={brandsRef}>
       <span
         className={`brands-heading app-text-regular ${
           isVisible ? "appearing_text" : ""

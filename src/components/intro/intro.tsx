@@ -57,11 +57,11 @@ export const Intro: React.FC<any> = () => {
         >
           Creation of Identity
         </span>
-        <span
+        {/* <span
           className={`foundation-text foundation-text-3 app-text-extra-bold `}
         >
           Harnessing Insights
-        </span>
+        </span> */}
       </div>
       <img src={Images.Img20NoBg} className={`foundation-img `} />
     </div>
