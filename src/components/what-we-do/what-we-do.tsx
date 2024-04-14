@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./what-we-do.css";
 import { Images } from "../../assets/images";
 
@@ -12,7 +12,6 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
     <div
       className={`what-we-do ${isVisible ? "what-we-do-visible" : ""}`}
       id={sectionId}
-      data-scroll-section
     >
       <div className="what-we-do-text-container">
         <span className="what-we-do-heading app-text-regular">What we do</span>

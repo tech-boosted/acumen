@@ -19,7 +19,10 @@ export const Header: React.FC<HeaderProps> = ({ isBgWhite, onClickToggle }) => {
         <span className="header-nav-text app-text-extra-bold ">Brands</span>
         <span className="header-nav-text app-text-extra-bold ">Careers</span>
       </div> */}
-      <div className="menu-toggle appearing_text_reverse" onClick={onClickToggle}>
+      <div
+        className="menu-toggle appearing_text_reverse"
+        onClick={onClickToggle}
+      >
         <span></span>
         <span></span>
         <span></span>

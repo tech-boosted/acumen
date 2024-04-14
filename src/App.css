@@ -63,17 +63,6 @@
   animation-delay: 0.5s;
 }
 
-.appearing_text_reverse {
-  -webkit-animation: appearing_text_reverse;
-  animation: appearing_text_reverse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
 @keyframes appearing_text {
   0% {
     -webkit-clip-path: inset(95% 0 0 0);
@@ -127,5 +116,27 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes loaderOutro {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    z-index: -89;
+  }
+}
+
+@keyframes loaderOutro {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    z-index: -89;
   }
 }

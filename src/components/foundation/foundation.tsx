@@ -12,11 +12,7 @@ export const Foundation: React.FC<FoundationProps> = ({
   sectionId,
 }) => {
   return (
-    <div
-      className="foundation horizontal-section"
-      data-scroll-section
-      id={sectionId}
-    >
+    <div className="foundation horizontal-section" id={sectionId}>
       <div className="foundation-text-container">
         <span
           className={`foundation-text foundation-text-1 app-text-extra-bold ${

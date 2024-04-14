@@ -9,11 +9,7 @@ interface CompanyProps {
 
 export const Company: React.FC<CompanyProps> = ({ isVisible, sectionId }) => {
   return (
-    <div
-      className={`company ${isVisible ? "appears" : ""}`}
-      id={sectionId}
-      data-scroll-section
-    >
+    <div className={`company ${isVisible ? "appears" : ""}`} id={sectionId}>
       <div className="company-section-1">
         <div className="company-text-container">
           <span
@@ -48,10 +44,10 @@ export const Company: React.FC<CompanyProps> = ({ isVisible, sectionId }) => {
               isVisible ? "appearing_text" : ""
             }`}
           >
-            Purpose: Acumen's purpose is to empower breakthrough products, distinguished
-            brands, and consumers' individuality; through constant innovation,
-            transformative characteristics, and deep learning. "We build and
-            grow global brands that are loved by customers, driven by
+            Purpose: Acumen's purpose is to empower breakthrough products,
+            distinguished brands, and consumers' individuality; through constant
+            innovation, transformative characteristics, and deep learning. "We
+            build and grow global brands that are loved by customers, driven by
             communities, and are purposed to change the world."
           </span>
           <span

@@ -5,3 +5,4 @@ export * from "./company/company";
 export * from "./foundation/foundation";
 export * from "./brands/brands";
 export * from "./menu/menu";
+export * from "./loader/loader";

@@ -28,7 +28,8 @@
   z-index: 1;
   gap: 70px;
 
-  width: 100%;
+  position: absolute;
+  width: 75%;
 }
 
 .foundation-text {

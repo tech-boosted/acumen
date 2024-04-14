@@ -21,28 +21,28 @@ export const Menu: React.FC<MenuProps> = ({ menuActive, onClose }) => {
             menuActive ? "menu-nav-text-animate option-1" : ""
           } `}
         >
-          Brands
+          About us
         </span>
         <span
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-2" : ""
           } `}
         >
-          About us
+          Brands
         </span>
-        <span
+        {/* <span
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-3" : ""
           } `}
         >
           Careers
-        </span>
+        </span> */}
         <span
           className={`menu-nav-text app-text-extra-bold ${
-            menuActive ? "menu-nav-text-animate option-4" : ""
+            menuActive ? "menu-nav-text-animate option-3" : ""
           } `}
         >
-          Contacts
+          Contact
         </span>
       </div>
     </div>
