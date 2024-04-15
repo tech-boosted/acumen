@@ -20,6 +20,9 @@ export const Menu: React.FC<MenuProps> = ({
           <span className="close-arc-2"></span>
         </div>
       </div>
+
+      <div></div>
+
       <div className="menu-text-container">
         <span
           className={`menu-nav-text app-text-extra-bold ${
@@ -52,6 +55,17 @@ export const Menu: React.FC<MenuProps> = ({
         >
           Contact
         </span>
+      </div>
+
+      <div className="menu-footer-container">
+        <div className="menu-footer-left">
+          <span className="app-text-dm-regular ">hello@acumenbrands.co</span>
+        </div>
+        <div className="menu-footer-right">
+          <span className="app-text-dm-regular ">Facebook</span>
+          <span className="app-text-dm-regular ">Linkedin</span>
+          <span className="app-text-dm-regular ">Instagram</span>
+        </div>
       </div>
     </div>
   );

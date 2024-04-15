@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 35px 100px;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -66,10 +66,22 @@
 
 .menu-toggle span {
   height: 2px;
-  background: #fafafa;
+  background: #fff;
   width: 30px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.menu-toggle span:nth-of-type(2) {
+  width: 17px;
+}
+
+.menu-toggle:hover span {
+  width: 30px !important;
+}
+
+.menu-toggle-white-bg span {
+  background: var(--primary-theme-color);
 }
 
 .appearing_text_reverse {
