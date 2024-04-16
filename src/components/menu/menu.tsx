@@ -62,9 +62,36 @@ export const Menu: React.FC<MenuProps> = ({
           <span className="app-text-dm-regular ">hello@acumenbrands.co</span>
         </div>
         <div className="menu-footer-right">
-          <span className="app-text-dm-regular ">Facebook</span>
-          <span className="app-text-dm-regular ">Linkedin</span>
-          <span className="app-text-dm-regular ">Instagram</span>
+          <span
+            className="menu-link app-text-dm-regular "
+            onClick={() =>
+              window.open(
+                "https://www.facebook.com/profile.php?id=61557711785172&mibextid=ZbWKwL",
+                "_blank"
+              )
+            }
+          >
+            Facebook
+          </span>
+          <span
+            className="menu-link app-text-dm-regular "
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/company/acumen-brands/",
+                "_blank"
+              )
+            }
+          >
+            Linkedin
+          </span>
+          <span
+            className="menu-link app-text-dm-regular "
+            onClick={() =>
+              window.open("https://www.instagram.com/acumen_brands", "_blank")
+            }
+          >
+            Instagram
+          </span>
         </div>
       </div>
     </div>
