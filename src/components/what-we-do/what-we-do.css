@@ -53,14 +53,16 @@
   display: flex;
 }
 
-.what-we-do-text-section-2 * {
+.what-we-do-column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .what-we-do-subheading {
   font-size: 3.1vw;
   color: #1b2845;
-  margin-bottom: 15px;
 }
 
 .what-we-do-subheading span {

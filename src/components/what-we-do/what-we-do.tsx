@@ -26,11 +26,10 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
           consumer's unique and bespoke needs. */}
         </span>
         <div className="what-we-do-text-section-2 ">
-          <div>
+          <div className="what-we-do-column">
             <span className="what-we-do-subheading app-text-regular">
               Thesis<span>.</span>
             </span>
-            <br />
             <p className="what-we-do-text app-text-dm-regular">
               - 14,000+ labels are launched in India every year. 12,600+ die in
               the first 12 months <br />
@@ -42,7 +41,6 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
               We synergize data and storytelling to solve for:
             </span>
             <span className="what-we-do-text app-text-dm-regular">
-              <br />
               What to build?
               <br />
               Who to build for?
@@ -53,11 +51,19 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
               <br />
             </span>
           </div>
-          <div>
+          <div className="what-we-do-column">
             <span className="what-we-do-subheading app-text-regular">
               Execution<span>.</span>
             </span>
-            <span className="what-we-do-text app-text-dm-regular"></span>
+            <p className="what-we-do-text app-text-dm-regular">
+              We solve "What to build" by leveraging research and data.
+              <br /> We solve "Who to build for" by creating Branding and
+              Experience.
+              <br /> We solve "How to build" by enhancing Product and Brand
+              Development.
+              <br />
+              We solve "How to scale" by harnessing performance and growth.
+            </p>
           </div>
         </div>
         {/* <ol>
