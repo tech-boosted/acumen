@@ -1,6 +1,7 @@
 import React from "react";
 import "./company.css";
 import { Images } from "../../assets/images";
+import { Parallax, useParallax } from "react-scroll-parallax";
 
 interface CompanyProps {
   isVisible: boolean;
@@ -13,6 +14,7 @@ export const Company: React.FC<CompanyProps> = ({
   sectionId,
   companyRef,
 }) => {
+  // const { ref } = useParallax({ speed: 10 });
   return (
     <div
       className={`company ${isVisible ? "appears" : ""}`}
@@ -22,24 +24,19 @@ export const Company: React.FC<CompanyProps> = ({
       <div className="company-section-1">
         <div className="company-text-container">
           <span
-            className={`company-heading app-text-regular ${
+            className={`company-heading app-text-dm-regular ${
               isVisible ? "appearing_text" : ""
             }`}
           >
-            About Us
+            About us
           </span>
-          {/* <span
-            className={`company-text app-text-dm-regular  ${
+          <span
+            className={`company-subheading app-text-regular  ${
               isVisible ? "appearing_text" : ""
             }`}
           >
-            Acumen
-            <br /> \AK-yoo-mun\ Greek.
-            <br /> Noun. : Something at an extreme height or depth. Peak of
-            perception, or discernment, especially in practical matters.
-            <br />
-            Similar: awareness, insight, heightened, wisdom, vision.
-          </span> */}
+            From idea to implementation
+          </span>
           <span
             className={`company-text app-text-dm-regular  ${
               isVisible ? "appearing_text" : ""
@@ -78,13 +75,17 @@ export const Company: React.FC<CompanyProps> = ({
           </span>
         </div>
         <div className="company-img-container">
-          <img
-            src={Images.Img21NoBg}
-            className={`company-img ${isVisible ? "appearing_text" : ""}`}
-          />
+          <Parallax translateY={[20, -15]} speed={-5}>
+            <img
+              // ref={ref}
+              src={Images.Img35}
+              className={`company-img `}
+              // className={`company-img ${isVisible ? "appearing_text" : ""}`}
+            />
+          </Parallax>
         </div>
       </div>
-      <div className="company-section-2">
+      {/* <div className="company-section-2">
         <span
           className={`company-text app-text-dm-regular  ${
             isVisible ? "appearing_text" : ""
@@ -110,7 +111,7 @@ export const Company: React.FC<CompanyProps> = ({
           initial brand-building phase, we equip our clients for aggressive and
           efficient global domination.​
         </span>
-      </div>
+      </div> */}
     </div>
   );
 };

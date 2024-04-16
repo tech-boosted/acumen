@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   Brands,
   Company,
+  Footer,
   Header,
   Intro,
   Loader,
@@ -51,9 +52,9 @@ export const App = () => {
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
         if (
-          sectionRect.top <= windowHeight / 6 &&
+          sectionRect.top <= windowHeight / 2 &&
           sectionRect.bottom >= 0 &&
-          !(sectionRect.bottom <= windowHeight - 600)
+          !(sectionRect.bottom <= windowHeight - 200)
         ) {
           setWhatWeDoVisible(true);
         } else {
@@ -65,7 +66,10 @@ export const App = () => {
         const sectionRect = companySection.getBoundingClientRect();
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
-        if (sectionRect.top <= windowHeight - 600 && sectionRect.bottom >= 0) {
+        if (
+          sectionRect.top <= windowHeight - 200 &&
+          sectionRect.bottom >= windowHeight - 500
+        ) {
           setCompanyVisible(true);
         } else {
           setCompanyVisible(false);
@@ -76,7 +80,9 @@ export const App = () => {
         const sectionRect = brandsSection.getBoundingClientRect();
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
-        if (sectionRect.top <= windowHeight / 2 && sectionRect.bottom >= 0) {
+        console.log("sectionRect.top: ", sectionRect.top);
+        console.log("windowHeight: ", windowHeight);
+        if (sectionRect.top <= windowHeight - 500) {
           setBrandsVisible(true);
         }
       }
@@ -95,7 +101,10 @@ export const App = () => {
   }, []);
 
   return (
-    <div className={`App ${whatWeDoVisible ? "App-white" : ""}`} id="app">
+    <div
+      className={`App ${whatWeDoVisible || companyVisible ? "App-white" : ""}`}
+      id="app"
+    >
       <Loader isVisible={loaderVisible} />
       <Menu
         menuActive={menuActive}
@@ -122,6 +131,7 @@ export const App = () => {
         isVisible={brandsVisible}
         brandsRef={brandsRef}
       />
+      <Footer />
     </div>
   );
 };

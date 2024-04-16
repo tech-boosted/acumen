@@ -5,9 +5,10 @@
   align-items: center;
 
   min-height: 100vh;
-  padding: 0 100px;
-  padding-top: 100px;
-  color: #fff;
+  padding: 100px;
+  padding-bottom: 150px;
+  /* color: #fff; */
+  color: #1b2845;
   gap: 45px;
   opacity: 0;
   transition: all 1s;
@@ -21,9 +22,16 @@
 }
 
 .company-img {
-  width: 450px;
+  /* width: 450px; */
+  /* height: auto; */
+  /* opacity: 0; */
+
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  display: block;
   height: auto;
-  opacity: 0;
+  top: -100px;
 }
 
 .company-text-container {
@@ -37,10 +45,16 @@
 .company-heading {
   font-size: 2vw;
   opacity: 0;
+  color: #1b2845;
+}
+
+.company-subheading {
+  font-size: 3vw;
+  opacity: 0;
 }
 
 .company-text {
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   opacity: 0;
 }
 

@@ -19,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 .what-we-do-img {
@@ -32,13 +31,38 @@
   flex-direction: column;
 
   gap: 40px;
-  flex: 1;
+  /* flex: 1.5; */
 }
 
 .what-we-do-heading {
-  font-size: 2vw;
+  font-size: 6.3vw;
+  color: #ffd23f;
+  text-transform: uppercase;
 }
 
 .what-we-do-text {
-  font-size: 1.5vw;
+  font-size: 1.8vw;
+  color: #1b2845;
+}
+
+.what-we-do-text-section-1 {
+  width: 85%;
+}
+
+.what-we-do-text-section-2 {
+  display: flex;
+}
+
+.what-we-do-text-section-2 * {
+  flex: 1;
+}
+
+.what-we-do-subheading {
+  font-size: 3.1vw;
+  color: #1b2845;
+  margin-bottom: 15px;
+}
+
+.what-we-do-subheading span {
+  color: #ffd23f;
 }

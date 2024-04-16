@@ -14,19 +14,52 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
       id={sectionId}
     >
       <div className="what-we-do-text-container">
-        <span className="what-we-do-heading app-text-regular">What we do</span>
-        <span className="what-we-do-text app-text-dm-regular">
+        <span className="what-we-do-heading app-text-regular">What we do?</span>
+        <span className="what-we-do-text-section-1 what-we-do-text app-text-dm-regular">
           We build and grow global brands that are loved by customers, driven by
-          communities, and are purposed to change the world.
-          <br />
-          <br />
-          Brands that have distinct identities, celebrate a customer's
-          individuality and harness the power of highly sophisticated
-          intelligence. Driven by belief in a brand's unique positioning,
+          communities, and are purposed to change the world. Brands that have
+          distinct identities, celebrate a customer's individuality and harness
+          the power of highly sophisticated intelligence.
+          {/* Driven by belief in a brand's unique positioning,
           innovative solution and captivating story, we nurture brands that are
           solutions with remarkable stories that resonate and cater to a
-          consumer's unique and bespoke needs.
+          consumer's unique and bespoke needs. */}
         </span>
+        <div className="what-we-do-text-section-2 ">
+          <div>
+            <span className="what-we-do-subheading app-text-regular">
+              Thesis<span>.</span>
+            </span>
+            <br />
+            <p className="what-we-do-text app-text-dm-regular">
+              - 14,000+ labels are launched in India every year. 12,600+ die in
+              the first 12 months <br />
+              - Only 18% of Indian labels were successful in transitioning from
+              Unbranded to Branded <br />- India has 600 D2C brands, compared to
+              10,000 in EU, 12,000 in China and 22,000 in US
+            </p>
+            <span className="what-we-do-text app-text-dm-regular">
+              We synergize data and storytelling to solve for:
+            </span>
+            <span className="what-we-do-text app-text-dm-regular">
+              <br />
+              What to build?
+              <br />
+              Who to build for?
+              <br />
+              How to build?
+              <br />
+              How to Scale?
+              <br />
+            </span>
+          </div>
+          <div>
+            <span className="what-we-do-subheading app-text-regular">
+              Execution<span>.</span>
+            </span>
+            <span className="what-we-do-text app-text-dm-regular"></span>
+          </div>
+        </div>
         {/* <ol>
           <li className="what-we-do-text app-text-dm-regular">
             We work with top-tier Market research companies to identify sizeable
@@ -55,9 +88,9 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
           </li>
         </ol> */}
       </div>
-      <div className="what-we-do-img-container">
+      {/* <div className="what-we-do-img-container">
         <img src={Images.Img25NoBg} className="what-we-do-img" />
-      </div>
+      </div> */}
     </div>
   );
 };

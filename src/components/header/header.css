@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 35px 100px;
+  padding: 18px 100px;
   align-items: center;
   position: fixed;
   top: 0;
@@ -13,7 +13,7 @@
 }
 
 .header-logo {
-  width: 100px;
+  width: 85px;
   height: auto;
 
   opacity: 0;
@@ -93,4 +93,14 @@
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
+}
+
+.header-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header-email {
+  font-size: 1.2vw;
 }

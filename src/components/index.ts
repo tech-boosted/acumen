@@ -6,3 +6,4 @@ export * from "./foundation/foundation";
 export * from "./brands/brands";
 export * from "./menu/menu";
 export * from "./loader/loader";
+export * from "./footer/footer";

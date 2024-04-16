@@ -4,8 +4,10 @@ import Img21 from "./21.jpeg";
 import Img21NoBg from "./21-no-bg.png";
 import Img25 from "./25.jpeg";
 import Img25NoBg from "./25-no-bg.png";
+import Img25Yellow from "./25-yellow-bg.png";
 import Ammo from "./ammo.png";
 import AmmoLogo from "./ammo-logo.png";
+import Img35 from "./35.jpeg";
 
 export const Images = {
   Img20,
@@ -16,4 +18,6 @@ export const Images = {
   Img25NoBg,
   Ammo,
   AmmoLogo,
+  Img35,
+  Img25Yellow,
 };
