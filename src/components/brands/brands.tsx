@@ -18,26 +18,31 @@ export const Brands: React.FC<BrandsProps> = ({
       logo1: Logos.Ammo1,
       logo2: Logos.Ammo2,
       title: "Ammo Grips",
+      url: "https://ammogrips.com",
     },
     {
       logo1: Logos.Absolute1,
       logo2: Logos.Absolute2,
       title: "Absolute Coffee",
+      url: "",
     },
     {
       logo1: Logos.Aphrobite1,
       logo2: Logos.Aphrobite2,
       title: "Aphrobite Gums",
+      url: "",
     },
     {
       logo1: Logos.Armour1,
       logo2: Logos.Armour2,
       title: "Armour Mens",
+      url: "",
     },
     {
       logo1: Logos.Audr1,
       logo2: Logos.Audr2,
       title: "AuDr",
+      url: "",
     },
   ];
 
@@ -53,10 +58,14 @@ export const Brands: React.FC<BrandsProps> = ({
       <div className="brands-list">
         {brands?.map((brand, index) => {
           return (
-            <div className="brand-box">
+            <div className="brand-box" key={index}>
               <div
                 className="brand-box-img-container"
-                onClick={() => window.open("https://ammogrips.com", "_blank")}
+                onClick={() =>
+                  brand?.url?.length !== 0
+                    ? window.open(brand?.url, "_blank")
+                    : {}
+                }
               >
                 <div className="overlay-box">
                   <img src={brand?.logo2} className="overlay-img" />

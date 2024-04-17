@@ -50,8 +50,8 @@ export const Intro: React.FC<any> = () => {
           : Something at an extreme height or depth. Peak of perception, or
           discernment, especially in practical matters.
         </span>
-        <span className="intro-logo-text app-text-extra-bold">
-          Packed in Glory, Wrapped in Story.
+        <span className="intro-text-medium app-text-extra-bold">
+          Packed with Glory, Wrapped in Story.
         </span>
       </div>
     </div>
