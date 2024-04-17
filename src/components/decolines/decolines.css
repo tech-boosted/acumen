@@ -16,3 +16,7 @@
 .decoline {
   position: absolute;
 }
+
+.decolines-hide {
+  display: none;
+}

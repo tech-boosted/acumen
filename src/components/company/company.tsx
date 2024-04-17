@@ -35,7 +35,7 @@ export const Company: React.FC<CompanyProps> = ({
               isVisible ? "appearing_text" : ""
             }`}
           >
-            From idea to implementation
+            From idea to Scale
           </span>
           <span
             className={`company-text app-text-dm-regular  ${

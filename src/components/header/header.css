@@ -20,7 +20,7 @@
 }
 
 .header-white-bg {
-  color: var(--primary-theme-color);
+  color: #1b2845;
 }
 
 .header-nav {
@@ -81,7 +81,7 @@
 }
 
 .menu-toggle-white-bg span {
-  background: var(--primary-theme-color);
+  background: #1b2845;
 }
 
 .appearing_text_reverse {

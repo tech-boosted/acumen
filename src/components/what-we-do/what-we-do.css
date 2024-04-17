@@ -50,6 +50,8 @@
 
 .what-we-do-text-section-2 {
   display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .what-we-do-column {
@@ -66,4 +68,38 @@
 
 .what-we-do-subheading span {
   color: #ffd23f;
+}
+
+.what-we-do-section-2-row-1,
+.what-we-do-section-2-row-2,
+.what-we-do-section-2-row-3,
+.what-we-do-section-2-row-4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-we-do-section-2-row-1 p {
+  flex: 0 0 49%;
+}
+.what-we-do-section-2-row-2 p {
+  flex: 0 0 49%;
+}
+.what-we-do-section-2-row-3 p {
+  flex: 0 0 49%;
+}
+.what-we-do-section-2-row-4 p {
+  flex: 0 0 49%;
+}
+
+.what-we-do-section-2-row-1 span {
+  flex: 0 0 49%;
+}
+.what-we-do-section-2-row-2 span {
+  flex: 0 0 49%;
+}
+.what-we-do-section-2-row-3 span {
+  flex: 0 0 49%;
+}
+.what-we-do-section-2-row-4 span {
+  flex: 0 0 49%;
 }

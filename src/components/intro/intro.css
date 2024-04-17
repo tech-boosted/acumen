@@ -69,3 +69,20 @@
   -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
 }
+
+.intro-text-small {
+  font-size: 0.8vw;
+  letter-spacing: 1px;
+  text-align: center;
+  opacity: 0;
+  margin-bottom: 10px;
+
+  -webkit-animation: appearing_text;
+  animation: appearing_text;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}

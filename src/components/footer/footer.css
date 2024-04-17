@@ -34,6 +34,8 @@
 .footer-subheading {
   font-size: 2.7vw;
   cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-subheading:hover:after {
@@ -69,4 +71,8 @@
 .footer-brand {
   display: flex;
   gap: 30px;
+}
+
+.footer-brand-text {
+  font-size: 1.2vw;
 }

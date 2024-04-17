@@ -1,9 +1,11 @@
 import React from "react";
 import "./decolines.css";
 
-export const Decolines: React.FC<any> = () => {
+export const Decolines: React.FC<{ show: boolean }> = ({ show }) => {
   return (
-    <div className="decolines decolines--fixed">
+    <div
+      className={`decolines decolines--fixed ${show ? "" : "decolines-hide"}`}
+    >
       <div
         className="decoline"
         style={{

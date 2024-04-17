@@ -46,30 +46,14 @@ export const Intro: React.FC<any> = () => {
         </span>
         <span className="intro-text app-text-dm-regular ">\AK-yoo-mun\ </span>
         <span className="intro-text app-text-dm-regular ">Greek. Noun. </span>
-        <span className="intro-text app-text-dm-regular ">
+        <span className="intro-text-small app-text-dm-regular ">
           : Something at an extreme height or depth. Peak of perception, or
           discernment, especially in practical matters.
         </span>
-      </div>
-
-      <div className="foundation-text-container">
-        <span
-          className={`foundation-text foundation-text-1 app-text-extra-bold `}
-        >
-          Celebration of Individuality
+        <span className="intro-logo-text app-text-extra-bold">
+          Packed in Glory, Wrapped in Story
         </span>
-        <span
-          className={`foundation-text foundation-text-2 app-text-extra-bold `}
-        >
-          Creation of Identity
-        </span>
-        {/* <span
-          className={`foundation-text foundation-text-3 app-text-extra-bold `}
-        >
-          Harnessing Insights
-        </span> */}
       </div>
-      <img src={Images.Img20NoBg} className={`foundation-img `} />
     </div>
   );
 };

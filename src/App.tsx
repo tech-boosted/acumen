@@ -106,7 +106,7 @@ export const App = () => {
       className={`App ${whatWeDoVisible || companyVisible ? "App-white" : ""}`}
       id="app"
     >
-      <Decolines />
+      <Decolines show={whatWeDoVisible || companyVisible} />
       <Loader isVisible={loaderVisible} />
       <Menu
         menuActive={menuActive}
