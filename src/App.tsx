@@ -40,6 +40,14 @@ export const App = () => {
         setMenuActive(false);
       }, 500);
     }
+    if (sectionName === "contact") {
+      setTimeout(() => {
+        contactRef?.current?.scrollIntoView();
+      }, 100);
+      setTimeout(() => {
+        setMenuActive(false);
+      }, 500);
+    }
   };
 
   useEffect(() => {
@@ -133,7 +141,7 @@ export const App = () => {
         isVisible={brandsVisible}
         brandsRef={brandsRef}
       />
-      <Footer />
+      <Footer footerRef={contactRef} />
     </div>
   );
 };

@@ -30,7 +30,7 @@ export const Menu: React.FC<MenuProps> = ({
           } `}
           onClick={() => onNavigate("about")}
         >
-          About us
+          About
         </span>
         <span
           className={`menu-nav-text app-text-extra-bold ${

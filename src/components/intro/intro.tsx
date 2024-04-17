@@ -51,7 +51,7 @@ export const Intro: React.FC<any> = () => {
           discernment, especially in practical matters.
         </span>
         <span className="intro-logo-text app-text-extra-bold">
-          Packed in Glory, Wrapped in Story
+          Packed in Glory, Wrapped in Story.
         </span>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./footer.css";
 
-export const Footer: React.FC<any> = () => {
+export const Footer: React.FC<{ footerRef: any }> = ({ footerRef }) => {
   return (
-    <div className="footer">
+    <div className="footer" ref={footerRef}>
       <div className="footer-section-1 ">
         <div className="footer-section-email">
           <span className="footer-heading app-text-dm-regular">Let's talk</span>

@@ -47,7 +47,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
               We synergize data and storytelling to solve for:
             </span>
             <span className="what-we-do-text app-text-dm-regular">
-              We solve crucial and personified problems at every stage:
+              We solve personified problems at every stage:
             </span>
           </div>
           <div className="what-we-do-section-2-row-4">

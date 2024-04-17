@@ -50,7 +50,7 @@ export const Company: React.FC<CompanyProps> = ({
               isVisible ? "appearing_text" : ""
             }`}
           >
-            Purpose: Acumen's purpose is to empower breakthrough products,
+            Acumen's purpose is to empower breakthrough products,
             distinguished brands, and consumers' individuality; through constant
             innovation, transformative characteristics, and deep learning. "We
             build and grow global brands that are loved by customers, driven by
