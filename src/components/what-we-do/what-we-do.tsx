@@ -31,11 +31,9 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
               Thesis<span>.</span>
             </span>
             <p className="what-we-do-text app-text-dm-regular">
-              - 14,000+ labels are launched in India every year. 12,600+ die in
-              the first 12 months <br />
-              - Only 18% of Indian labels were successful in transitioning from
-              Unbranded to Branded <br />- India has 600 D2C brands, compared to
-              10,000 in EU, 12,000 in China and 22,000 in US
+              Most retailers lack the depth in knowledge of building a consumer
+              brand capable of realising the potential to serve Local,
+              Continental, and Global consumers.
             </p>
             <span className="what-we-do-text app-text-dm-regular">
               We synergize data and storytelling to solve for:
@@ -53,17 +51,18 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
           </div>
           <div className="what-we-do-column">
             <span className="what-we-do-subheading app-text-regular">
-              Execution<span>.</span>
+              Our Solution<span>.</span>
             </span>
             <p className="what-we-do-text app-text-dm-regular">
-              We solve "What to build" by leveraging research and data.
-              <br /> We solve "Who to build for" by creating Branding and
-              Experience.
-              <br /> We solve "How to build" by enhancing Product and Brand
-              Development.
-              <br />
-              We solve "How to scale" by harnessing performance and growth.
+              We study 1000+ research backed data points in each aspect of the
+              process, and then build a brand accordingly.
             </p>
+            <span className="what-we-do-text app-text-dm-regular">
+              Leverage Reaearch and Data
+              <br /> Create Branding and Experience
+              <br /> Enhance Product and Brand Development
+              <br /> Harness Performance and Growth
+            </span>
           </div>
         </div>
         {/* <ol>

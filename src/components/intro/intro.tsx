@@ -50,9 +50,6 @@ export const Intro: React.FC<any> = () => {
           : Something at an extreme height or depth. Peak of perception, or
           discernment, especially in practical matters.
         </span>
-        <span className="intro-text app-text-dm-regular">
-          Similar: awareness, insight, heightened, wisdom, vision.
-        </span>
       </div>
 
       <div className="foundation-text-container">

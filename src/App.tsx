@@ -112,7 +112,7 @@ export const App = () => {
         onClose={() => setMenuActive(!menuActive)}
       />
       <Header
-        isBgWhite={whatWeDoVisible}
+        isBgWhite={whatWeDoVisible || companyVisible}
         onClickToggle={() => setMenuActive(!menuActive)}
       />
       {/* <div style={{ display: "flex" }} className="intro-horizontal">
