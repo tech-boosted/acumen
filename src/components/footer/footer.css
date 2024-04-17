@@ -19,13 +19,11 @@
 .footer-section-email {
   display: flex;
   flex-direction: column;
-  /* flex: 1; */
 }
 
 .footer-section-social {
   display: flex;
   flex-direction: column;
-  /* flex: 1; */
 }
 
 .footer-heading {
@@ -38,7 +36,7 @@
   cursor: pointer;
 }
 
-/* .footer-subheading:hover:after {
+.footer-subheading:hover:after {
   width: 100%;
 }
 
@@ -53,7 +51,16 @@
   z-index: -1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-} */
+}
+
+.footer-subheading-animate {
+  -webkit-animation: menu-links-effect;
+  animation: menu-links-effect;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
 
 .footer-section-3 {
   display: flex;

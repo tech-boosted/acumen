@@ -7,14 +7,14 @@ export const Footer: React.FC<any> = () => {
       <div className="footer-section-1 ">
         <div className="footer-section-email">
           <span className="footer-heading app-text-dm-regular">Let's talk</span>
-          <span className="footer-subheading app-text-regular">
+          <span className="footer-subheading footer-subheading-animate app-text-regular">
             hello@acumenbrands.co
           </span>
         </div>
         <div className="footer-section-social">
           <span className="footer-heading app-text-dm-regular">Follow us</span>
           <span
-            className="footer-subheading app-text-regular"
+            className="footer-subheading footer-subheading-animate app-text-regular"
             onClick={() =>
               window.open(
                 "https://www.facebook.com/profile.php?id=61557711785172&mibextid=ZbWKwL",
@@ -25,7 +25,7 @@ export const Footer: React.FC<any> = () => {
             Facebook
           </span>
           <span
-            className="footer-subheading app-text-regular"
+            className="footer-subheading footer-subheading-animate app-text-regular"
             onClick={() =>
               window.open("https://www.instagram.com/acumen_brands", "_blank")
             }
@@ -33,7 +33,7 @@ export const Footer: React.FC<any> = () => {
             Instagram
           </span>
           <span
-            className="footer-subheading app-text-regular"
+            className="footer-subheading footer-subheading-animate app-text-regular"
             onClick={() =>
               window.open(
                 "https://www.linkedin.com/company/acumen-brands/",

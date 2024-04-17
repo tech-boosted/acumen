@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   Brands,
   Company,
+  Decolines,
   Footer,
   Header,
   Intro,
@@ -105,6 +106,7 @@ export const App = () => {
       className={`App ${whatWeDoVisible || companyVisible ? "App-white" : ""}`}
       id="app"
     >
+      <Decolines />
       <Loader isVisible={loaderVisible} />
       <Menu
         menuActive={menuActive}
