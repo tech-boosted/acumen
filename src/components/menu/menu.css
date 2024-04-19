@@ -136,3 +136,41 @@
 .menu-link {
   cursor: pointer;
 }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .close-box {
+    top: 25px;
+    right: 30px;
+  }
+  .close {
+    height: 30px;
+    width: 30px;
+  }
+
+  .close-arc-1,
+  .close-arc-2 {
+    height: 2px;
+    width: 30px;
+  }
+  .menu-text-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 80px;
+  }
+  .menu-nav-text {
+    font-size: 5vw;
+    letter-spacing: 1px;
+  }
+  .menu-footer-container span {
+    font-size: 2.3vw;
+  }
+  .menu-footer-left {
+    display: flex;
+  }
+}

@@ -104,3 +104,30 @@
 .header-email {
   font-size: 1.2vw;
 }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    padding: 18px 30px;
+  }
+
+  .header-logo {
+    width: 60px;
+  }
+
+  .menu-toggle span {
+    width: 25px;
+  }
+
+  .header-right {
+    gap: 15px;
+  }
+
+  .header-email {
+    font-size: 3vw;
+  }
+}

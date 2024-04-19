@@ -43,7 +43,7 @@
   width: 250px;
   height: auto;
   opacity: 0;
-  
+
   -webkit-animation: appearing_text;
   animation: appearing_text;
   -webkit-animation-duration: 1s;
@@ -59,7 +59,7 @@
   letter-spacing: 1px;
   text-align: center;
   opacity: 0;
-  
+
   -webkit-animation: appearing_text;
   animation: appearing_text;
   -webkit-animation-duration: 1s;
@@ -76,7 +76,7 @@
   text-align: center;
   opacity: 0;
   margin-bottom: 10px;
-  
+
   -webkit-animation: appearing_text;
   animation: appearing_text;
   -webkit-animation-duration: 1s;
@@ -101,4 +101,30 @@
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .intro {
+    padding: 0 30px;
+  }
+  .intro-logo {
+    width: 120px;
+  }
+  .intro-text {
+    font-size: 3vw;
+  }
+  .intro-logo-text {
+    font-size: 4vw;
+  }
+  .intro-text-small {
+    font-size: 2vw;
+  }
+  .intro-text-medium {
+    font-size: 5.5vw;
+  }
 }
