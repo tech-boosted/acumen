@@ -103,3 +103,29 @@
 .what-we-do-section-2-row-4 span {
   flex: 0 0 49%;
 }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .what-we-do {
+    padding: 0 30px;
+  }
+  .what-we-do-text-container {
+    gap: 20px;
+  }
+  .what-we-do-heading {
+    font-size: 8vw;
+  }
+  .what-we-do-text {
+    font-size: 3vw;
+  }
+  .what-we-do-text-section-1 {
+    width: 100%;
+  }
+  .what-we-do-text-section-2 {
+    gap: 10px;
+  }
+}

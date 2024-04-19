@@ -68,3 +68,30 @@
   flex-direction: column;
   gap: 25px;
 }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .company {
+    padding: 30px;
+  }
+  .company-text-container {
+    gap: 25px;
+  }
+  .company-section-1 {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .company-heading {
+    font-size: 4vw;
+  }
+  .company-subheading {
+    font-size: 3.5vw;
+  }
+  .company-text {
+    font-size: 3vw;
+  }
+}

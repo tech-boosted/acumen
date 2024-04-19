@@ -37,7 +37,6 @@
   /* max-width: 50%; */
   /* padding-left: 10px;
   padding-right: 10px; */
-
 }
 
 .brand-box-text {
@@ -85,4 +84,20 @@
 .overlay-img {
   width: 100%;
   border-radius: 15px;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .brands {
+    padding: 0 80px;
+    gap: 40px;
+  }
+
+  .brands-heading {
+    font-size: 5vw;
+  }
 }
