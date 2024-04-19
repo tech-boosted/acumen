@@ -16,10 +16,10 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
       <div className="what-we-do-text-container">
         <span className="what-we-do-heading app-text-regular">What we do?</span>
         <span className="what-we-do-text-section-1 what-we-do-text app-text-dm-regular">
-          We build and grow global brands that are loved by customers, driven by
-          communities, and are purposed to change the world. Brands that have
-          distinct identities, celebrate a customer's individuality and harness
-          the power of highly sophisticated intelligence.
+          We build and grow brands that are loved by customers, driven by
+          communities, and are purposed to change the world. Our brands have
+          distinct identities which celebrate a customer's individuality and
+          harness the power of highly sophisticated intelligence.
         </span>
         <div className="what-we-do-text-section-2 ">
           <div className="what-we-do-section-2-row-1">

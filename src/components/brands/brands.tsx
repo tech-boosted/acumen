@@ -26,12 +26,12 @@ export const Brands: React.FC<BrandsProps> = ({
       title: "Absolute Coffee",
       url: "",
     },
-    {
-      logo1: Logos.Aphrobite1,
-      logo2: Logos.Aphrobite2,
-      title: "Aphrobite Gums",
-      url: "",
-    },
+    // {
+    //   logo1: Logos.Aphrobite1,
+    //   logo2: Logos.Aphrobite2,
+    //   title: "Aphrobite Gums",
+    //   url: "",
+    // },
     {
       logo1: Logos.Armour1,
       logo2: Logos.Armour2,

@@ -43,18 +43,23 @@ export const Company: React.FC<CompanyProps> = ({
             }`}
           >
             Acumen is a rapidly growing consumer e-commerce company that is
-            transforming the way consumer brands are built & scaled.
+            transforming the way brands are built & scaled.
           </span>
           <span
             className={`company-text app-text-dm-regular  ${
               isVisible ? "appearing_text" : ""
             }`}
           >
-            Acumen's purpose is to empower breakthrough products,
-            distinguished brands, and consumers' individuality; through constant
-            innovation, transformative characteristics, and deep learning. "We
-            build and grow global brands that are loved by customers, driven by
-            communities, and are purposed to change the world."
+            We aim to empower breakthrough products, distinguished brands, and
+            consumers' individuality; through constant innovation,
+            transformative characteristics, and deep learning.
+          </span>
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            Our principles are:
           </span>
           <span
             className={`company-text app-text-dm-regular  ${
@@ -72,6 +77,26 @@ export const Company: React.FC<CompanyProps> = ({
             Controlled Execution: Being part of the brand right from the
             inception with well-executed product research, supply chain, design,
             branding, marketing, and distribution.
+          </span>
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            End-to-End Alignment: We prioritize operations alignment from the
+            outset, ensuring all components function as a cohesive whole.{" "}
+          </span>
+          <span
+            className={`company-text app-text-dm-regular  ${
+              isVisible ? "appearing_text" : ""
+            }`}
+          >
+            This holistic approach grants Acumen a distinct advantage – the
+            ability to turbocharge operations and drive efficient,
+            results-oriented expansion in all directions by proactively
+            addressing manufacturing and supply chain considerations during the
+            initial brand-building phase, we equip our clients for aggressive
+            and efficient global domination.​
           </span>
         </div>
         <div className="company-img-container">
