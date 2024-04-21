@@ -18,7 +18,7 @@ export const App = () => {
   const brandsRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
 
-  const [pitchDeckModal, setPitchDeckModal] = useState(true);
+  const [pitchDeckModal, setPitchDeckModal] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
   const [whatWeDoVisible, setWhatWeDoVisible] = useState(false);
   const [companyVisible, setCompanyVisible] = useState(false);
