@@ -6,13 +6,11 @@
   left: 0;
   right: 0;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 99999999;
-
-  display: none;
 }
 
 .pitch-deck-show {

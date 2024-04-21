@@ -11,6 +11,14 @@ export const Pitch: React.FC<{
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
   const onSubmit = () => {
     setLoading(true);
     fetch("https://hm38q32x8d.execute-api.us-east-2.amazonaws.com/dev/save", {
@@ -31,7 +39,12 @@ export const Pitch: React.FC<{
   };
 
   const disabled = useMemo(() => {
-    return name?.length === 0 || email?.length === 0 || loading;
+    return (
+      validateEmail(email) === null ||
+      name?.length === 0 ||
+      email?.length === 0 ||
+      loading
+    );
   }, [name, email, loading]);
 
   return (
@@ -41,6 +54,8 @@ export const Pitch: React.FC<{
           className="pitch-close-box"
           onClick={() => {
             setSubmitted(false);
+            setName("");
+            setEmail("");
             onClose();
           }}
         >
@@ -116,7 +131,7 @@ export const Pitch: React.FC<{
                 className={`pitch-btn app-text-dm-regular ${
                   disabled ? "pitch-btn-disabled" : ""
                 }`}
-                onClick={onSubmit}
+                onClick={disabled ? () => null : onSubmit}
               >
                 {loading ? <div className="spinner"></div> : "Download"}
               </div>
