@@ -5,9 +5,14 @@ import { Images } from "../../assets/images";
 interface WhatWeDoProps {
   sectionId: string;
   isVisible: boolean;
+  openPitchDesk: () => void;
 }
 
-export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
+export const WhatWeDo: React.FC<WhatWeDoProps> = ({
+  sectionId,
+  isVisible,
+  openPitchDesk,
+}) => {
   return (
     <div
       className={`what-we-do ${isVisible ? "what-we-do-visible" : ""}`}
@@ -67,6 +72,11 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ sectionId, isVisible }) => {
               <br /> Enhance Product and Brand Development.
               <br /> Harness Performance and Growth.
             </span>
+          </div>
+          <div className="download-btn-container">
+            <button onClick={openPitchDesk} className="download-btn">
+              Download Pitch Deck
+            </button>
           </div>
           {/* <div className="what-we-do-column">
             <span className="what-we-do-subheading app-text-regular">

@@ -104,6 +104,19 @@
   flex: 0 0 49%;
 }
 
+.download-btn-container {
+  margin-top: 2em;
+}
+
+.download-btn {
+  border: none;
+  background-color: #ffd23f;
+  padding: 10px 15px;
+  font-size: 1.1vw;
+  color: #1b2845;
+  cursor: pointer;
+}
+
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px

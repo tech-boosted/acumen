@@ -8,6 +8,7 @@ import {
   Intro,
   Loader,
   Menu,
+  Pitch,
   WhatWeDo,
 } from "./components";
 import "./App.css";
@@ -17,6 +18,7 @@ export const App = () => {
   const brandsRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
 
+  const [pitchDeckModal, setPitchDeckModal] = useState(true);
   const [menuActive, setMenuActive] = useState(false);
   const [whatWeDoVisible, setWhatWeDoVisible] = useState(false);
   const [companyVisible, setCompanyVisible] = useState(false);
@@ -130,7 +132,11 @@ export const App = () => {
         <Foundation sectionId={"id-foundation"} isVisible={foundationVisible} />
       </div> */}
       <Intro />
-      <WhatWeDo sectionId={"id-what-we-do"} isVisible={whatWeDoVisible} />
+      <WhatWeDo
+        sectionId={"id-what-we-do"}
+        isVisible={whatWeDoVisible}
+        openPitchDesk={() => setPitchDeckModal(true)}
+      />
       <Company
         sectionId={"id-company"}
         isVisible={companyVisible}
@@ -142,6 +148,7 @@ export const App = () => {
         brandsRef={brandsRef}
       />
       <Footer footerRef={contactRef} />
+      <Pitch open={pitchDeckModal} onClose={() => setPitchDeckModal(false)} />
     </div>
   );
 };

@@ -8,3 +8,4 @@ export * from "./menu/menu";
 export * from "./loader/loader";
 export * from "./footer/footer";
 export * from "./decolines/decolines";
+export * from "./pitch/pitch";
