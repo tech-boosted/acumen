@@ -30,7 +30,7 @@
   display: flex;
   position: absolute;
   color: #fff;
-  top: 55px;
+  /* top: 55px; */
   right: 100px;
   font-size: 50px;
   cursor: pointer;
@@ -113,8 +113,8 @@
   animation-delay: 0.9s;
 }
 .option-4 {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s !important;
+  animation-delay: 1.2s !important;
 }
 
 .menu-footer-container {
@@ -135,6 +135,31 @@
 
 .menu-link {
   cursor: pointer;
+}
+
+.menu-download-btn-container {
+  position: absolute;
+  bottom: 250px;
+  left: 770px;
+  opacity: 0;
+}
+
+.menu-download-btn {
+  border: none;
+  background-color: #ffd23f;
+  padding: 14px 18px;
+  font-size: 1vw;
+  color: #1b2845;
+  cursor: pointer;
+}
+
+.menu-download-btn-animate {
+  -webkit-animation: appears;
+  animation: appears;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /* 

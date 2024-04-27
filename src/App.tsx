@@ -122,6 +122,7 @@ export const App = () => {
         menuActive={menuActive}
         onNavigate={scrollToSection}
         onClose={() => setMenuActive(!menuActive)}
+        openPitchDesk={() => setPitchDeckModal(true)}
       />
       <Header
         isBgWhite={whatWeDoVisible || companyVisible}

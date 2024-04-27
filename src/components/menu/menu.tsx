@@ -5,12 +5,14 @@ interface MenuProps {
   menuActive: boolean;
   onNavigate: (sectionName: "about" | "contact" | "brands") => any;
   onClose: () => any;
+  openPitchDesk: () => void;
 }
 
 export const Menu: React.FC<MenuProps> = ({
   menuActive,
   onNavigate,
   onClose,
+  openPitchDesk,
 }) => {
   return (
     <div className={`menu ${menuActive ? "menu-active" : ""} `}>
@@ -19,6 +21,16 @@ export const Menu: React.FC<MenuProps> = ({
           <span className="close-arc-1"></span>
           <span className="close-arc-2"></span>
         </div>
+      </div>
+
+      <div
+        className={`menu-download-btn-container  ${
+          menuActive ? "appears option-4" : ""
+        } `}
+      >
+        <button onClick={openPitchDesk} className="menu-download-btn">
+          Download Pitch Deck
+        </button>
       </div>
 
       <div></div>
