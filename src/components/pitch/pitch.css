@@ -160,3 +160,60 @@
 .pitch-check-text {
   font-size: 1vw;
 }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .pitch-deck {
+    padding: 15px 20px;
+  }
+  .pitch-heading {
+    font-size: 3.6vw;
+    margin-bottom: 0px;
+  }
+
+  .pitch-subheading {
+    font-size: 2.4vw;
+  }
+  ul {
+    padding-inline-start: 20px;
+  }
+  ul > li {
+    font-size: 2vw;
+  }
+  .pitch-form {
+    gap: 10px;
+
+    padding-top: 20px;
+  }
+  .pitch-input {
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+  .pitch-list {
+    gap: 20px;
+  }
+  .pitch-btn {
+    padding: 4px 4px;
+    font-size: 2vw;
+    margin-top: 6px;
+    width: auto;
+  }
+  .pitch-close-box {
+    top: 10px;
+    right: 20px;
+  }
+  .pitch-close {
+    height: 15px;
+    width: 15px;
+  }
+
+  .pitch-close-arc-1,
+  .pitch-close-arc-2 {
+    height: 2px;
+    width: 15px;
+  }
+}

@@ -63,7 +63,9 @@
 .menu-text-container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 80%;
+  height: 30%;
 }
 
 .menu-nav-text {
@@ -138,9 +140,11 @@
 }
 
 .menu-download-btn-container {
-  position: absolute;
+  /* position: absolute;
   bottom: 250px;
   left: 770px;
+  opacity: 0;
+  */
   opacity: 0;
 }
 
@@ -160,6 +164,14 @@
   animation-duration: 0.7s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 /* 
@@ -200,5 +212,9 @@
   }
   .menu-footer-right {
     gap: 8px;
+  }
+  .menu-download-btn-container,
+  .dummy-div {
+    display: none;
   }
 }

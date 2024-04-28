@@ -141,4 +141,8 @@
   .what-we-do-text-section-2 {
     gap: 10px;
   }
+  .download-btn {
+    font-size: 2.3vw;
+    padding: 10px 12px;
+  }
 }

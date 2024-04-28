@@ -23,35 +23,41 @@ export const Menu: React.FC<MenuProps> = ({
         </div>
       </div>
 
-      <div
-        className={`menu-download-btn-container  ${
-          menuActive ? "appears option-4" : ""
-        } `}
-      >
-        <button onClick={openPitchDesk} className="menu-download-btn">
-          Download Pitch Deck
-        </button>
-      </div>
-
+      <div className="dummy-div"></div>
       <div></div>
 
       <div className="menu-text-container">
-        <span
-          className={`menu-nav-text app-text-extra-bold ${
-            menuActive ? "menu-nav-text-animate option-1" : ""
-          } `}
-          onClick={() => onNavigate("about")}
-        >
-          About
-        </span>
-        <span
-          className={`menu-nav-text app-text-extra-bold ${
-            menuActive ? "menu-nav-text-animate option-2" : ""
-          } `}
-          onClick={() => onNavigate("brands")}
-        >
-          Brands
-        </span>
+        <div className=" option-container">
+          <span
+            className={`menu-nav-text app-text-extra-bold ${
+              menuActive ? "menu-nav-text-animate option-1" : ""
+            } `}
+            onClick={() => onNavigate("about")}
+          >
+            About
+          </span>
+          <div></div>
+        </div>
+        <div className=" option-container">
+          <span
+            className={`menu-nav-text app-text-extra-bold ${
+              menuActive ? "menu-nav-text-animate option-2" : ""
+            } `}
+            onClick={() => onNavigate("brands")}
+          >
+            Brands
+          </span>
+
+          <div
+            className={`menu-download-btn-container  ${
+              menuActive ? "appears option-4" : ""
+            } `}
+          >
+            <button onClick={openPitchDesk} className="menu-download-btn">
+              Download Pitch Deck
+            </button>
+          </div>
+        </div>
         {/* <span
           className={`menu-nav-text app-text-extra-bold ${
             menuActive ? "menu-nav-text-animate option-3" : ""
@@ -59,15 +65,28 @@ export const Menu: React.FC<MenuProps> = ({
           >
           Careers
         </span> */}
-        <span
-          className={`menu-nav-text app-text-extra-bold ${
-            menuActive ? "menu-nav-text-animate option-3" : ""
-          } `}
-          onClick={() => onNavigate("contact")}
-        >
-          Contact
-        </span>
+        <div className=" option-container">
+          <span
+            className={`menu-nav-text app-text-extra-bold ${
+              menuActive ? "menu-nav-text-animate option-3" : ""
+            } `}
+            onClick={() => onNavigate("contact")}
+          >
+            Contact
+          </span>
+          <div></div>
+        </div>
       </div>
+
+      {/* <div
+        className={`menu-download-btn-container  ${
+          menuActive ? "appears option-4" : ""
+        } `}
+      >
+        <button onClick={openPitchDesk} className="menu-download-btn">
+          Download Pitch Deck
+        </button>
+      </div> */}
 
       <div className="menu-footer-container">
         <div className="menu-footer-left">
